@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: sample-nodejs-app
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/rhn-support-bpimente-tenant/sample-nodejs-app/sample-nodejs-app@sha256:d60592ddd6c5036fe74a367b4c93a5f7bdc9c280d07182ea6f9ad1393338d363
+        name: container-image
+        resources: {}
+status: {}
