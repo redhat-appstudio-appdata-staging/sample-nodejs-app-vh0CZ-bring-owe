@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: sample-nodejs-app
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads-stage/rhn-support-bpimente-tenant/sample-nodejs-app/sample-nodejs-app@sha256:d60592ddd6c5036fe74a367b4c93a5f7bdc9c280d07182ea6f9ad1393338d363
         imagePullPolicy: Always
         name: container-image
         ports:
